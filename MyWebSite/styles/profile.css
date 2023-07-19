@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --blue: #4dc00b;
+    --dark-blue: #2980b9;
+    --red: #e74c3c;
+    --dark-red: #c0392b;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+*{
+    font-family: 'Poppinss', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .profile::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(#ffe600, #ff0000);
+    transform: translate(-110px, 35px);
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: linear-gradient(#0099ff, #3a2e6d);
+    transform: translate(130px, 350px);
+}
+
+.container .profile{
+    position: relative;
+    margin-top: 4cm;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    z-index: 10000;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #ffffff;
+    backdrop-filter: blur(15px);
+}
+
+.container .profile img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin-left: 10px;
+    z-index: 10000;
+    filter: drop-shadow(0 0 10px #fff);
+}
+
+.container .profile p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Poppinss', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.container .profile button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+.container .profile button.btn{
+    background-color: #fff;
+    color: #4dc00b;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 100%;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+.container .profile button.delete-btn{
+    background-color: var(--red);
+    color: #fff;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+.container .profile button.btn:hover{
+    border: 1px solid #4dc00b;
+    transition: border 0.5s;
+}
+
+.container .profile button.delete-btn:hover{
+    background-color: #ffffff;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    box-shadow: 1px 1px 10px #ffffff;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+
+@media scrreen and (max-width: 767px){
+    div.container{
+        background-color: var(--light-bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 350px;
+        padding: 20px;
+        margin-right: 6cm;
+        margin-top: 3cm;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+    }
+}

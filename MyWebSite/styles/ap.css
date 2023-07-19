@@ -1,0 +1,98 @@
+:root{
+  --green: #4dc00b;
+  --wh: #fff;
+  --lg-wh: #eee;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20cm;
+  height: 400px;
+  background-color: #fff;
+  margin-top: 2cm;
+}
+
+.container .control{
+  height: 100px;
+}
+
+.container .main-img{
+  height: 300px;
+  width: 400px;
+}
+
+.container .main-img img{
+  height: 349px;
+  width: 400px;
+}
+
+.container .main-another{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--lg-wh);
+  width: 350px;
+  height: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container .main-another .man-1{
+  font-size: 20px;
+  font-weight: 550;
+  color: #4dc00bae;
+}
+
+.container .another{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container .another .an-1{
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  color: rgb(143, 143, 143);
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.container .another .an-1:hover{
+  color: #000;
+  transition: color 0.5s;
+}
+
+.container .another input[type="button"]{
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--green);
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.container .another input[type="button"]:hover{
+  background-color: #ffffff00;
+  border: var(--green) solid 1px;
+  color: var(--green);
+  transition: background 0.5s, color 0.5s, border 0.5s;
+}

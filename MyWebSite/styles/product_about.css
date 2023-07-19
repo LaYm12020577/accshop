@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    widows: 100%;
+    background-color: #4dc00b;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+ion-icon{
+    font-size: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2cm;
+}
+
+.container .col{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 1px 1px 10px #333;
+    border-radius: 20px;
+}
+

@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #4dc00b;
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+}
+
+.container .header{
+    height: 50vh;
+    width: 35cm;
+    background-image: url(../imgs/ip14.jpg);
+    background-size:cover;
+    background-position: center;
+    position: fixed;
+    z-index: -5;
+}
+
+section{
+    position: relative;
+    background-color: #fffffff7;
+    z-index: 1;
+}
+
+section .main-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section .col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+    gap: 1.5rem;
+    margin-right: 50px;
+    margin-left: 90px;
+}
+
+section .col .elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    height: 310px;
+    margin-left: 30px;
+    transition: border 0.5s, padding 0.2s;    
+}
+
+section .col .elements:hover{
+    padding: 15px;
+    border: 1px solid #4dc00b;
+    box-shadow: 1px 1px 5px #4dc00b;
+    transition: border 0.2s, padding 0.2s;
+}
+
+section .col .elements img{
+    width: 70%;
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+section .col .elements a{
+    width: 90%;
+    border: none;
+    height: 25px;
+    margin-top: 15px;
+    background-color: #4dc00b;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+section .col .elements a:hover{
+    background-color: #4dc00b00;
+    color: #4dc00b;
+    border: 1px solid #4dc00b;
+    transition: border 0.5s, background 0.5s, color 0.5s;
+}
+
+
+@media screen and (max-width: 767px) {
+    section .col{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px,auto));
+        gap: 1.5rem;
+        margin-right:30px;
+        margin-left: 20px;
+    }
+}
